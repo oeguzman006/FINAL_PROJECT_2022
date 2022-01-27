@@ -1,10 +1,152 @@
 /* nav css */
 .Logo {
     display: inline-block;
+    cursor: pointer;
+    margin-right: 100px;
 }
 .search {
     display: inline-block;
     width: 600px;
     height: 50px;
-    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 18px;
+    border-style: solid;
+}
+.sIcon {
+   display: inline-block;
+   margin-left: 10px;
+}
+.inline-block {
+    display: inline-flex;
+    padding-right: 20px;
+}
+.navIcon {
+    margin-left: 100px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* buttons */
+.Recommendations {
+    display: flex;
+    justify-content: center;
+}
+.buttons {
+    margin: 70px 72px 0 0;
+    height: 52px;
+    width: 196px;
+    border-radius: 10px;
+    background-color: #407987;
+    color: #FFFFFF;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 22px;
+    border-style: none;
+}
+
+/* h3 css */
+h3 {
+    text-align: center;
+    margin: 57px 0 0 0;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 40px;
+}
+.underline {
+    text-decoration: underline #407987;
+}
+
+/* posts */
+.posts {
+    background-color: #C5CDC1;
+    display: flex;
+    justify-content: center;
+    margin: 53px auto;
+    width: 1201px;
+    height: 783px;
+    position: relative;
+}
+.username {
+    position: absolute;
+    top: 85px;
+    left: 136px;
+}
+.name {
+    position: absolute;
+    top: 60px;
+    left: 232px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+.small {
+    position: absolute;
+    top: 95px;
+    left: 256px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+}
+.postB {
+    position: absolute;
+    top: 140px;
+    left: 225px;
+    width: 135px;
+    height: 39px;
+    border-radius: 10px;
+    background-color: #05034F;
+    color: #FFFFFF;
+    border-style: none;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+}
+.postImg {
+    position: absolute;
+    top: 80px;
+    left: 438px;
+}
+.videoTitle {
+    position: absolute;
+    top: 660px;
+    left: 438px;
+    max-width: 328px;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+}
+.container {
+    position: absolute;
+    top: 220px;
+    left: 750px;
+}
+.videoIcons {
+    padding-bottom: 20px;
+}
+.ellipses {
+    position: absolute;
+    top: 73px;
+    right: 70px;
+}
+
+.load {
+    width: 196px;
+    height: 52px;
+    border-radius: 10px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 24px;
+    background-color: #05034F;
+    color: #FFFFFF;
+    border-style: none;
+}
+.loadB {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
