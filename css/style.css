@@ -1,0 +1,9 @@
+/* nav css */
+.Logo {
+    width: 150px;
+    position: absolute;
+    top: 17px;
+    left: 12%;
+    text-align: center;
+    cursor: pointer;
+}
