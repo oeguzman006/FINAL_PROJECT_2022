@@ -1,9 +1,10 @@
 /* nav css */
 .Logo {
-    width: 150px;
-    position: absolute;
-    top: 17px;
-    left: 12%;
-    text-align: center;
-    cursor: pointer;
+    display: inline-block;
+}
+.search {
+    display: inline-block;
+    width: 600px;
+    height: 50px;
+    margin: 0 auto;
 }
