@@ -28,6 +28,77 @@ nav {
     justify-content: center;
     align-items: center;
 }
+.checkbtn {
+    color: #000000;
+    font-size: 50px;
+    line-height: 80px;
+    margin-right: 30px;
+    float: right;
+    display: none;
+    cursor: pointer;
+}
+#check {
+    display: none;
+}
+
+/* responsive nav */
+@media screen and (max-width: 900px) {
+    nav {
+        width: auto;
+    }
+    .Logo {
+        transform: scale(0.8);
+        margin-right: 20px;
+    }
+    .search {
+        width: 400px;
+    }
+    .inline-block {
+        width: 40px;
+        padding-right: 10px;
+        display: none;
+    }
+    .navIcon {
+        margin-left: 20px;
+        flex: 50%;
+    }
+    .checkbtn {
+        display: block;
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        width: auto;
+    }
+    .Logo {
+        transform: scale(0.6);
+        margin-right: 40px;
+    }
+    .search {
+        display: none;
+    }
+    .inline-block {
+        width: 40px;
+        padding-right: 10px;
+        display: none;
+    }
+    .navIcon {
+        margin-left: 20px;
+        flex: 50%;
+    }
+    .checkbtn {
+        display: block;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .sIcon {
+        float: right;
+        margin-left: 100px;
+    }
+}
 
 /* buttons */
 .Recommendations {
@@ -44,7 +115,32 @@ nav {
     font-family: 'Oxygen', sans-serif;
     font-size: 22px;
     border-style: none;
+    transition: transform 0.3s;
+    cursor: pointer;
 }
+.buttons:hover {
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+/* responsive buttons */
+@media screen and (max-width: 900px) {
+    .buttons {
+        width: 150px;
+        height: 50px;
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .buttons {
+        width: 100px;
+        height: 40px;
+        margin-top: 30px;
+        margin-right: 20px;
+        font-size: 18px;
+    }
+}
+
 
 /* h3 css */
 h3 {
@@ -55,6 +151,14 @@ h3 {
 }
 .underline {
     text-decoration: underline #407987;
+}
+
+/* responsive h3 */
+@media screen and (max-width: 600px) {
+    h3 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
 }
 
 /* posts */
@@ -99,6 +203,13 @@ h3 {
     border-style: none;
     font-family: 'Oxygen', sans-serif;
     font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.postB:hover {
+    transform: scale(1.1);
+    color: #FFCE1F;
+    border: 1px solid #FFCE1F;
 }
 .postImg {
     position: absolute;
@@ -121,11 +232,19 @@ h3 {
 }
 .videoIcons {
     padding-bottom: 20px;
+    transition: transform 0.3s;
+}
+.videoIcons:hover {
+    transform: scale(0.9);
 }
 .ellipses {
     position: absolute;
     top: 73px;
     right: 70px;
+    transition: transform 0.3s;
+}
+.ellipses:hover {
+    transform: scale(0.9);
 }
 
 .load {
@@ -137,11 +256,91 @@ h3 {
     background-color: #05034F;
     color: #FFFFFF;
     border-style: none;
+    transition: transform 0.3s;
 }
 .loadB {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.load:hover {
+    transform: scale(1.1);
+    color: #FFCE1F;
+    border: 1px solid #FFCE1F;
+}
+
+/* responsive posts */
+@media screen and (max-width: 900px) {
+    .posts {
+        width: auto;
+    }
+    .username {
+        left: 60px;
+    }
+    .name {
+        left: 150px;
+    }
+    .small {
+        left: 175px;
+    }
+    .postB {
+        left: 140px;
+    }
+    .postImg {
+        left: 300px;
+    }
+    .container {
+        left: 610px;
+    }
+    .videoTitle {
+        left: 300px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .posts {
+        background-color: transparent;
+        margin-top: 30px;
+    }
+    .postImg {
+        left: 140px;
+        top: 130px;
+    }
+    .ellipses {
+        top: 120px;
+        right: 100px;
+        color: #FFFFFF;
+    }
+    .username {
+        top: 40px;
+        left: 40px;
+    }
+    .name {
+        top: 30px;
+        left: 130px;
+    }
+    .small {
+        left: 150px;
+        top: 65px;
+    }
+    .postB {
+        left: 425px;
+        top: 60px;
+        width: 100px;
+    }
+    .videoTitle {
+        left: 140px;
+        top: 700px;
+    }
+    .container {
+        left: 350px;
+        top: 300px;
+        color: #FFFFFF;
+    }
+    .videoIcons {
+       transform: scale(0.7);
+       padding-bottom: 10px;
+    }
 }
 
 /* footer */
@@ -165,4 +364,14 @@ footer ul li {
     align-items: center;
     justify-content: center;
     margin-top: 40px;
+}
+/* responsive footer */
+@media screen and (max-width: 600px) {
+    footer ul li {
+        padding-right: 10px;
+        font-size: 14px;
+    }
+    .CR {
+        margin-top: 20px;
+    }
 }
